@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="Estilocontacto.css">
+		<link
+		  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+		  rel="stylesheet"
+		  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+		  crossorigin="anonymous"
+		/>
+		<!-- Bootstrap Iconos -->
+		<title>Contacto</title>
+		<link
+		  rel="stylesheet"
+		  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+		/>
+		
+</head>
+<body>
+	<!-- fila de logo + nav --> 
+	<header>
+		<nav
+		class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+		id="navbar-example3">
+		<div class="container">
+			<a href="/" class="navbar-brand">
+			<img src="Img/logo.png" alt="">
+			</a>
+			<button
+			  class="navbar-toggler"
+			  type="button"
+			  data-bs-toggle="collapse"
+			  data-bs-target="#navbarSupportedContent"
+			  aria-controls="navbarSupportedContent"
+			  aria-expanded="false"
+			  aria-label="Toggle navigation"
+			>
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<li class="nav-item"><a href= "../index.html"class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="Rutas.html"class="nav-link">Rutas</a></li>
+				<li class="nav-item"><a href="Venta de boletos.html" class="nav-link">Venta de boletos</a></li>
+				<li class="nav-item"><a href="Contacto.html" class="nav-link">Contacto</a></li>
+				<li class="nav-item"><a href="Información.html" class="nav-link">Información</a></li>
+			</ul>
+			</ul>
+		</nav>
+		</header>
+	<!-- cierre de fila logo + nav -->
+	<!-- fila de información de mi sitio -->
+	<section>
+		<h1>CONTACTO</h1>
+	</section>
+	<!-- formulario de contacto -->
+	<section><div id="buzon" class="container-block  bkgn-gray">
+		<div class="container-fluid">
+		<div class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+		<div id="resultadoContacto" class="infoProceso hide">
+		</div>
+		<div class="col-md-8">
+		<h2>Buzón</h2>
+		</div>
+		<div class="col-md-6">
+		<br>
+		</div>
+		<div class="col-md-6 clearfix">
+		<p><input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" required=""></p>
+		<div><p>Elige una opción:</p>
+			<div>Colaborador
+				<input type="radio" name="lado" value="izquierda">
+			</div>
+			<div>Alumno
+				<input type="radio" name="lado" value="derecha">
+			</div>
+		</div>
+		<p></p>
+		<p><input type="text" name="id" id="id" placeholder="ID"></p>
+		<p></p>
+		<p>División</p>
+				<select name="letra" id="letra"> 
+					<option value="a">Arquitectura</option>
+					<option value="b">Comuniación</option>
+					<option value="c">Diseño</option>
+					<option value="d">Ciencias Jurídicas y sociales</option>
+					<option value="e">Ingeniería y ciencias exactas</option>
+					<option value="f">Negocios</option>
+					<option value="g">Turismo y gastronomía</option>
+					<option value="h">Ciencias de la salud</option>
+					<option value="i">Otro</option>
+				</select>
+				<p></p>
+		<p><input type="text" name="telefono" id="telefono" placeholder="Teléfono (opcional)"></p>
+		</div>
+		<div class="col-md-6">
+		<p><input type="text" name="email" id="email" placeholder="E-mail" required=""></p>
+		<p><textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea></p>
+		<p></p>
+		<div>Deseas recibir newletters
+			<input type="checkbox" name="acepta" value="1"></div>
+			<p></p>
+		<p class="text-right"><input type="submit" name="enviar" value="Enviar"></p>
+		</div>
+		<div class="clearfix"></div>
+		</form>
+		<div class="clearfix"></div>
+		<form id="formBuzonDenuncia" class="formBuzon hide" action="procesos/procesa-mensaje-anonimo.php" method="post" onsubmit="return validaContactoAnonimo();">
+		<div class="col-md-12">
+		<h3>IMPORTANTE:</h3>
+		<p>Este formulario es totalmente anónimo y la información transmitida es confidencial.</p>
+		<p>¡Gracias por ayudarnos a mejorar cada día! Con tu opinión, podemos alcanzar un estado de calidad total en tu Universidad. No guardamos la dirección de tu navegador, ni tampoco datos sobre tu computadora, smartphone o tableta. Este servicio está a tu disposición para beneficio de todos.</p>
+		<p><input type="text" name="asunto" id="asunto" placeholder="Asunto" required=""></p>
+		<p><textarea name="mensaje" id="mensajeAnonimo" placeholder="Mensaje" required=""></textarea></p>
+		<p class="text-right"><input type="submit" name="enviar" value="Enviar"></p>
+		</div>
+		<div class="clearfix"></div>
+		</form>
+		</div>
+		</div>
+		</div></section>
+	<!-- cierre de form contacto -->
+	<!-- inicio de footer --> 
+	<footer class="main-footer">
+		<div class="derechos-redes-sociales">
+		<div class="container-fluid">
+		<div class="col-md-6">
+		<nav>
+		Derechos reservados © 2023
+		<span>
+		<a href="https://merida.anahuac.mx/institucional/aviso-de-privacidad" class=" first  last  https://merida.anahuac.mx/institucional/aviso-de-privacidad">
+		Aviso de Privacidad </a>
+		</span>
+		</nav>
+		</div>
+		<div class="col-md-6">
+		<p class="text-right"><a href="https://merida.anahuac.mx/" target="_blank"><img src="img/logo-universidad.png"></a></p>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+		</div>
+		</footer>
+</body>
+</html>
