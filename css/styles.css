@@ -1,9 +1,10 @@
 /* Error: Undefined variable.
  *    ,
- * 46 |     border: 2px solid $primary-color;
- *    |                       ^^^^^^^^^^^^^^
+ * 30 | $carousel-indicator-active-bg:       $primary;
+ *    |                                      ^^^^^^^^
  *    '
- *   scss\styles.scss 46:23  root stylesheet */
+ *   scss\_variables.scss 30:38  @import
+ *   scss\styles.scss 1:9        root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 46 \2502      border: 2px solid $primary-color;\d\a    \2502                        ^^^^^^^^^^^^^^\a    \2575 \a   scss\\styles.scss 46:23  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 30 \2502  $carousel-indicator-active-bg:       $primary;\d\a    \2502                                       ^^^^^^^^\a    \2575 \a   scss\\_variables.scss 30:38  @import\a   scss\\styles.scss 1:9        root stylesheet";
 }

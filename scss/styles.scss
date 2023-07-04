@@ -12,20 +12,27 @@ html {
   color: orange;
   }
 
+  .container-block {
+    padding-top: 30px;
+      overflow: hidden;
+    } 
 body {
     font-family: $font;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	  background-color: #3f3b3b;
+  	color: orange;
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.2em;
 
 
     background: {
         color:map-get($colors,text-light);
-        image: url (https://vscode.dev/github/Pachue/PreEntrega2Pacheco-/blob/main/Img/bus.png)
         position: center;
-        size: cover;
-
-       
+        size: cover;    
     }
-
 
     .bg {
         clip-path: polygon(0 0, 35% 0, 65% 100%, 0% 100%);
@@ -132,13 +139,12 @@ main {
         }
 
         a {
-            background-color: map-get($colors,primary-light);
-            color: map-get($colors, text-dark);
-            border-radius: $radius;
-            box-shadow: $shadow;
-            font-weight: bold;
-            display: block;
-            padding: $padding;
+           color: orange;
+           font-family: 'Roboto', Courier, monospace;
+           font-weight: 600;
+           text-decoration: none;
+           font-size: 1.2rem;
+           line-height: 2rem;
 
             text: {
                 decoration: none;
@@ -152,4 +158,5 @@ main {
             }
         }
     }
+ }
 }
