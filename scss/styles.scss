@@ -7,9 +7,10 @@ html {
     height: 100%;
 
 }
-.carrousel-text: {
+
+.carrousel-text {
   color: orange;
-}
+  }
 
 body {
     font-family: $font;
@@ -21,7 +22,7 @@ body {
         image: url (https://vscode.dev/github/Pachue/PreEntrega2Pacheco-/blob/main/Img/bus.png)
         position: center;
         size: cover;
-        repeat:no-repeat;
+
        
     }
 
@@ -38,7 +39,7 @@ body {
             clip-path: polygon(0 0, 65% 0, 35% 100%, 0% 100%);
         }
     }
-}
+
 
 main {
     padding-top: 15%;
