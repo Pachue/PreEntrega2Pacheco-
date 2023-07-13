@@ -7,7 +7,19 @@ html {
     height: 100%;
 
 }
-
+footer {
+    background-color: black;
+    background: #272727;
+    color: #fff;
+    padding: 22px 0;
+    font-size: 18px;
+	display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+  }
 .carrousel-text {
   color: orange;
   }
